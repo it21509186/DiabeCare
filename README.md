@@ -205,7 +205,10 @@ height, and weight also provide an alert whether the diabetic level will increas
 
 - Calorie Intake Analysis
   - Generate personalized reports highlighting meal patterns, deviations, and nutritional gaps.  
-  - Provide actionable insights for healthcare providers and users to optimize diets.  
+  - Provide actionable insights for healthcare providers and users to optimize diets.
+ 
+# Git Hub Repo Link
+https://github.com/it21509186/DiabeCare.git
 
 
 
