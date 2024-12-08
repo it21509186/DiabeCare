@@ -82,130 +82,210 @@ Overall, Health Care Management System:
 height, and weight also provide an alert whether the diabetic level will increase, decrease
 
 # Architectural Diagram 
-
 ![sytem_overview_diagram](https://github.com/user-attachments/assets/90271e88-d54f-45d7-ba57-90827f57c32c)
 
 
 # Dependencies
+Dependencies for the Comprehensive Integrated Healthcare Management System
 
 1. Data Dependencies
-- Dataset  
-  - Comprehensive health dataset (age, sex, glucose levels, BMI, etc.) for diabetic care.  
-  - Annotated datasets for food recognition with features like food type, portion size, and nutritional content (e.g., calories, protein, carbohydrates).  
-  - Health indicator ranges (e.g., BMI classifications, blood glucose thresholds).  
-  - Historical meal data for dietary trend analysis and personalized recommendations.  
 
-- Real-Time Data Sources
-  - Fitness trackers, smartwatches, and glucose monitors for health tracking.  
-  - User-uploaded meal photos or videos for real-time calorie estimation.  
-  - APIs for barcode scanning of packaged foods for nutritional data retrieval.  
+Dataset:
 
+Comprehensive dataset with features like age, sex, exercise type, glucose levels, BMI, diabetes type, blood pressure, heart rate, blood oxygen level, height, and weight.
 
+Annotated datasets for food recognition with features like food type, portion size, and nutritional content (e.g., calories, protein, carbohydrates).
+
+Health indicator ranges (e.g., BMI classifications with normal weight ranges, blood glucose thresholds).
+
+Historical health data for trend analysis and model training.
+
+Historical meal data for dietary trend analysis and personalized recommendations.
+
+Real-Time Data Sources:
+
+Fitness trackers, smartwatches, glucose monitors for real-time data collection.
+
+User-uploaded meal photos or videos for real-time calorie estimation.
+
+APIs for barcode scanning of packaged foods for nutritional data retrieval.
+
+Integration with health APIs like Google Fit, Apple HealthKit, or device SDKs.
 
 2. Software Dependencies
-- Programming Languages
-  - Python: For predictive analytics, backend logic, food recognition algorithms, and calorie estimation.  
-  - Dart: For mobile frontend development using Flutter.  
 
-- Libraries and Frameworks  
-  - TensorFlow/Keras: For CNN-based food recognition and health data predictions.  
-  - OpenCV: For image preprocessing and volume estimation.  
-  - Pandas, NumPy: For data processing (health and nutritional data).  
-  - Flask/Django: For building RESTful APIs to serve health and food calorie data.  
+Programming Languages:
 
-- APIs 
-  - Health APIs (Google Fit, Apple HealthKit) for glucose and fitness tracking.  
-  - FoodData Central or Edamam API for nutritional information retrieval.  
+Python: For machine learning, predictive analytics, backend logic, food recognition algorithms, and calorie estimation.
 
+JavaScript: For frontend and interactive dashboard development.
 
+Dart: For mobile frontend development using Flutter.
+
+Libraries and Frameworks:
+
+Machine Learning:
+
+TensorFlow, Keras, Scikit-learn, or PyTorch for model training and predictive analytics.
+
+Optuna or GridSearchCV for hyperparameter tuning.
+
+Data Analysis and Visualization:
+
+Pandas, NumPy for data manipulation and analysis.
+
+Matplotlib, Seaborn, D3.js, or Chart.js for dashboards and trend visualizations.
+
+Mobile and Web Development:
+
+Flutter or React Native for mobile app development.
+
+Flask/Django for building RESTful APIs to serve health and food calorie data.
+
+APIs:
+
+Google Fit API, Apple HealthKit API, or Open mHealth APIs for health data integration.
+
+FoodData Central or Edamam API for nutritional information retrieval.
+
+Notification APIs (e.g., Firebase Cloud Messaging, APNS).
 
 3. Hardware Dependencies
-- Smart Devices
-  - Wearables for real-time health monitoring (e.g., physical activity, glucose).  
-  - Smartphones with high-resolution cameras for meal uploads.  
-  - Barcode scanners for packaged food data integration.  
 
-- Cloud Services
-  - AWS: For scalable model deployment, data storage, and processing (health and food data).  
+Smart Devices:
 
+Wearables for real-time health monitoring (e.g., physical activity, glucose).
 
+Smartphones with high-resolution cameras for meal uploads and sensors for step count, activity duration, etc.
+
+Barcode scanners for packaged food data integration.
+
+Cloud Services:
+
+Cloud platforms like AWS, Google Cloud, or Microsoft Azure for hosting the backend, running predictive models, storing health and food data securely, and providing scalable model deployment.
 
 4. Machine Learning Dependencies
-- Algorithms 
-  - CNN: For food recognition and feature extraction from meal images.  
-  - ARIMA/LSTM: For blood glucose trend predictions.  
-  - Regression models: For calorie prediction based on meal composition and user activity.  
 
-- Feature Engineering Tools
-  - Libraries for normalizing data (e.g., glucose levels, meal portions).  
+Algorithms:
 
-- Model Training Environment  
-  - Jupyter Notebook/Google Colab: For developing and testing models.  
+CNN: For food recognition and feature extraction from meal images.
 
+ARIMA/LSTM: For blood glucose trend predictions.
 
+Regression models: For calorie prediction based on meal composition and user activity.
+
+Decision Tree, Random Forest for classification and prediction.
+
+Clustering algorithms for grouping patients by trends.
+
+Feature Engineering Tools:
+
+Libraries for preprocessing data (e.g., handling missing data, normalizing glucose levels, scaling meal portions).
+
+Image preprocessing tools for diabetic foot image analysis.
+
+Model Training Environment:
+
+Jupyter Notebook/Google Colab for developing and testing models.
+
+Deployment-ready environments for real-time analytics.
 
 5. Integration and Security Dependencies
-- Authentication Services 
-  - OAuth: For secure user authentication.  
-  - Two-factor authentication: For protecting sensitive user data.  
 
-- Data Encryption  
-  - AES/RSA: For encrypting sensitive health and food data.  
-  - HTTPS: For secure app-backend communication.  
+Authentication Services:
 
-- Data Storage  
-  - Firebase: For storing meal logs, calorie estimates, and health data in real-time.  
-  - Relational databases (PostgreSQL): For structured data storage (user profiles, historical logs).  
+OAuth for secure user login and integration with health platforms.
 
+Two-factor authentication (2FA) for added security.
 
+Data Encryption:
+
+AES or RSA for encrypting sensitive health and food data.
+
+HTTPS for secure app-backend communication.
+
+Data Storage:
+
+Firebase for storing meal logs, calorie estimates, and health data in real-time.
+
+Relational databases (PostgreSQL, MySQL) for structured data storage (user profiles, historical logs).
+
+NoSQL databases (e.g., MongoDB) for flexible data storage.
 
 6. User Engagement Dependencies
-- Notification Services
-  - Firebase Cloud Messaging (FCM): For meal reminders, dietary tips, and health alerts.  
 
-- Visualization
-  - Dashboards for tracking trends in calorie intake, glucose levels, and adherence to recommendations.  
+Gamification Frameworks:
 
+Dependencies for creating badges, progress tracking, and challenges for user motivation.
 
+Notification Services:
+
+Firebase Cloud Messaging (FCM), Apple Push Notification Service (APNS) for meal reminders, dietary tips, and health alerts.
+
+Visualization Tools:
+
+Dashboards for tracking trends in calorie intake, glucose levels, adherence to recommendations, and overall health insights.
+
+Libraries like D3.js or Chart.js for interactive visualizations.
 
 7. Testing and Deployment Dependencies
-- Testing Tools  
-  - Selenium/Appium: For automated UI testing of mobile features.  
-  - PyTest: For backend logic and API testing.  
 
-- Deployment
-  - CI/CD tools (Jenkins/GitHub Actions): For seamless deployments.  
-  - Google Play Store and Apple App Store: For mobile app distribution.  
+Testing Tools:
 
+Selenium or Appium for automated UI testing of mobile features.
 
+PyTest or Mocha for backend logic and API testing.
+
+Deployment Platforms:
+
+Google Play Store and Apple App Store for mobile app distribution.
+
+CI/CD tools (Jenkins, GitHub Actions) for seamless deployments.
 
 8. Health Monitoring
-- Lab Report Analysis
-  - Preprocess lab reports to analyze health metrics (HbA1c, fasting blood sugar).  
-  - Detect risk levels and provide personalized recommendations.  
 
-- Calorie Tracking
-  - Monitor meal compositions and calorie consumption for dietary compliance.  
+Record key indicators like blood pressure, heart rate, blood oxygen levels using smart devices.
 
+Calculate BMI values and classify patients using a tabular display of world-recognized normal BMI ranges (e.g., healthy, unhealthy).
 
+Preprocess lab reports to analyze health metrics (HbA1c, fasting blood sugar) and detect risk levels for personalized recommendations.
 
-9. Future Blood Glucose Level Prediction
-- Predictive Models
-  - ARIMA/LSTM models for forecasting glucose trends.  
-  - Incorporate meal details, physical activity, and medication history for personalized insights.  
+9. Trend Analysis and Reporting
 
-- Notifications  
-  - Real-time alerts for predicted high-risk glucose levels or unhealthy meal patterns.  
+Blood Glucose Trends:
 
+Weekly, monthly, and yearly analysis of blood glucose levels and lab findings.
 
+Calorie Intake Analysis:
 
-10. Trend Analysis and Reporting
-- Blood Glucose Trends
-  - Weekly, monthly, and yearly analysis of blood glucose levels and lab findings.  
+Generate personalized reports highlighting meal patterns, deviations, and nutritional gaps.
 
-- Calorie Intake Analysis
-  - Generate personalized reports highlighting meal patterns, deviations, and nutritional gaps.  
-  - Provide actionable insights for healthcare providers and users to optimize diets.
+Provide actionable insights for healthcare providers and users to optimize diets.
+
+Health Insights and Reporting:
+
+Generate reports with detailed progression of health indicators.
+
+Include actionable suggestions and highlight abnormal data points with red markers for better visibility.
+
+10. Predictive Analytics for Diabetic Foot Health
+
+Predictive Models:
+
+Train machine learning models for risk assessment using uploaded images of patient feet.
+
+Preprocess, analyze, and provide risk evaluations and recommendations for patient care.
+
+Notifications:
+
+Automated alerts for healthcare providers when critical health parameters exceed safe ranges.
+
+11. Alert System
+
+Notifications:
+
+Real-time alerts for predicted high-risk glucose levels, unhealthy meal patterns, or deviations from health norms.
+
  
 # Git Hub Repo Link
 https://github.com/it21509186/DiabeCare.git
