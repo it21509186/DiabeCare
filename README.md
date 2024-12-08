@@ -1,6 +1,46 @@
 # DiabeCare
 Integrated Healthcare Management System for Enhanced Diabetic Patient Care
 
+# Research Question
+Diabetes is a growing public health concern worldwide, with significant implications for individuals' 
+health and quality of life. In Sri Lanka, the prevalence of diabetes has been rising steadily, posing 
+a major public health challenge. Effective management of diabetes requires continuous 
+monitoring and regulation of various health parameters. Many diabetic patients face challenges 
+in maintaining consistent and accurate records of these parameters, leading to suboptimal disease 
+management and increased risk of complications. However, existing mobile applications often fall 
+short of providing comprehensive, integrated solutions that address all aspects of diabetes 
+management. Below, we outline five key research problems related to diabetes management 
+applications, demonstrating how our proposed system offers superior.
+Most existing applications focus on a single aspect of diabetes management, such as blood glucose 
+monitoring or dietary tracking, but fail to provide a holistic view of a patient’s health. For instance, 
+apps like MySugr focus primarily on blood sugar logging, while lose it, (Seto et al., 2016) centers 
+on dietary tracking. Our system integrates multiple health parameters including calorie intake, 
+medication adherence, physical activity, and vital signs, offering a comprehensive overview of the 
+patient’s health status.
+Many applications do not support seamless integration with various health monitoring devices, 
+leading to inconsistent and inaccurate data entry. Apps like Glucose Buddy (Wu et al., 2019) 
+require manual entry of blood glucose levels, which can be error prone. Our system’s use of Scan
+integration for automatic data transfer from blood glucose monitors ensures accuracy and reduces 
+the burden on patients.
+While some apps provide basic recommendations, they often lack the sophistication to offer 
+personalized advice based on comprehensive data analysis. For example, the Diabetes app (Brzan 
+et al., 2016) offers general dietary advice but does not tailor recommendations based on individual 
+health data. Our system employs machine learning to analyze integrated health data and deliver 
+personalized insights and recommendations, making it more effective in guiding patients’ daily 
+management.
+Few applications utilize advanced predictive analytics to foresee potential health issues and 
+provide proactive recommendations. The Glooko app (Foster et al., 2016) offers trend analysis also 
+excellent tracking. But it is not available in our region. Our system is available to all the Sri Lankan 
+diabetic patients along with the more excellent tracking. Also, algorithms predict future health 
+risks and outcomes, allowing for early intervention and better long-term management of 
+diabetes.
+Maintaining user engagement and adherence to diabetes management plans is a significant 
+challenge. Apps like BlueLoop (Moore et al., 2014) provide excellent tracking features but struggle 
+with keeping users consistently engaged. Our system addresses this by offering a user-friendly 
+interface combined with comprehensive, actionable insights, thus encouraging sustained use and 
+adherence to management plans.
+
+
 # Project Overview
 The Integrated Healthcare Management System for Enhanced Diabetic Patient Care offers an 
 easy-to-use solution for managing diabetes. It uses advanced technologies like image recognition, 
